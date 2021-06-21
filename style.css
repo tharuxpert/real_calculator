@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(49, 48, 48);
+    background-color: rgb(8, 14, 65);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@ body{
     height: 35px;
     width: 35px;
     margin: 5px 5px;
-    border: 0.5px solid gray;
+    border: 1.5px solid gray;
     border-radius: 5px;
     background: linear-gradient(142deg, rgba(255,255,255,1) 0%, rgba(193,240,245,1) 55%);
     font-size: 1.6rem;
@@ -42,7 +42,7 @@ body{
     height: 35px;
     width: 35px;
     margin: 5px 5px;
-    border: 0.5px solid gray;
+    border: 1.5px solid gray;
     border-radius: 5px;
     font-size: 1.6rem;
     font-weight: 600;
@@ -55,7 +55,7 @@ body{
     right: 96px;
     height: 35px;
     width: 35px;
-    border: 0.5px solid red;
+    border: 1.5px solid red;
     border-radius: 5px;
     font-size: 1rem;
     background: linear-gradient(138deg, rgba(245,213,213,1) 20%, rgba(255,175,175,1) 48%);
@@ -67,7 +67,7 @@ body{
     right: 61px;
     height: 125px;
     width: 35px;
-    border: 0.5px solid gray;
+    border: 1.5px solid gray;
     border-radius: 5px;
     font-size: 1.6rem;
     font-weight: 600;
