@@ -27,6 +27,10 @@ body{
     text-align: right;
 }
 
+#input::placeholder{
+    font-size: 1rem;
+}
+
 .btns1{
     height: 35px;
     width: 35px;
