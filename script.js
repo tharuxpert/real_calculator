@@ -12,7 +12,12 @@ var num7 = document.querySelector('#num7').addEventListener('click', num7Clicked
 var num8 = document.querySelector('#num8').addEventListener('click', num8Clicked);
 var num9 = document.querySelector('#num9').addEventListener('click', num9Clicked);
 var numclear = document.querySelector('#numClear').addEventListener('click', clearAll);
-var numClearTxt = document.getElementById('numClear');
+
+document.getElementById("input").addEventListener("mousedown", unselectable);
+
+function unselectable(event){
+  event.preventDefault();
+}
 
 function numDotClicked() {
     if (input.value == '') {
@@ -23,69 +28,83 @@ function numDotClicked() {
     else {
         var x = '.';
         input.value += (`${x}`);
+        numClear.textContent = 'C';
     }
 }
 function num00Clicked() {
-    var x = parseInt(0);
-    input.value += (`${x}0`);
-    if (numClearTxt.textContent == 'CE') {
-        numClearTxt = 'C';
+    
+    if (input.value == '' || input.value == '0') {
+        
     }
     else {
-        numClearTxt = 'CE';
+        var x = parseInt(0);
+        input.value += (`${x}0`);
+        numClear.textContent = 'C';
     }
 }
 function num0Clicked() {
-    var x = parseInt(0);
-    input.value += x;
+    
+    if (input.value == '0') {
+        
+    }
+    else {
+        var x = parseInt(0);
+        input.value += x;
+        numClear.textContent = 'C';
+    }
 }
 function num1Clicked() {
     var x = parseInt(1);
     input.value += x;
+    numClear.textContent = 'C';
 }
 function num2Clicked() {
     var x = parseInt(2);
     input.value += x;
+    numClear.textContent = 'C';
 }
 function num3Clicked() {
     var x = parseInt(3);
     input.value += x;
+    numClear.textContent = 'C';
 }
 function num4Clicked() {
     var x = parseInt(4);
     input.value += x;
+    numClear.textContent = 'C';
 }
 function num5Clicked() {
     var x = parseInt(5);
     input.value += x;
+    numClear.textContent = 'C';
 }
 function num6Clicked() {
     var x = parseInt(6);
     input.value += x;
+    numClear.textContent = 'C';
 }
 function num7Clicked() {
     var x = parseInt(7);
     input.value += x;
+    numClear.textContent = 'C';
 }
 function num8Clicked() {
     var x = parseInt(8);
     input.value += x;
+    numClear.textContent = 'C';
 }
 function num9Clicked() {
     var x = parseInt(9);
     input.value += x;
+    numClear.textContent = 'C';
 }
 
 // Inserting 'C' text content to Clear Button
-if (input.value.includes == '') {
-    var x = 'C';
-    numClearTxt.textContent = `${x}C`;
-    console.log(numClearTxt.textContent);
-}
-else {
-    numClearTxt.textContent = 'CE';
+if (input.value != '') {
+    numClear.textContent = 'C';
 }
 
 function clearAll() {
     input.value = '';
+    numClear.textContent = 'CE';
 }

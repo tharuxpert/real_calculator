@@ -1,9 +1,17 @@
 body{
-    background-color: rgb(8, 14, 65);
+    transform-origin: 0 0;
+    transform: scale(1.8);
+    padding-right: 42%;
+    margin: auto;
+    background-image: url();
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    place-items: center;
+    overflow-X: hidden;
+    align-items: center;
+    place-content: center;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -13,8 +21,13 @@ body{
     user-select: none;
 }
 
+.page h1.format-icon:before {
+    content: none;
+}
+
 #cal{
     border: 5px solid black;
+    margin-top: 20px;
     border-radius: 5%;
     height: 250px;
     width: 250px;
@@ -32,6 +45,17 @@ body{
     background-color: #ddfcff;
     margin-bottom: 10px;
     text-align: right;
+    cursor: auto;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
 
 #input::placeholder{
@@ -83,6 +107,31 @@ body{
     border-radius: 5px;
     font-size: 1rem;
     background: linear-gradient(138deg, rgba(245,213,213,1) 20%, rgba(255,175,175,1) 48%);
+}
+
+/* Label */
+#label{
+    font-size: 1rem;
+    color: gray;
+    position: relative;
+    left: 45px;
+}
+
+a{
+    position: relative;
+    left: 45px;
+    text-decoration: none;
+    color: rgb(255, 8, 0);
+    font-style: italic;
+}
+
+a:hover{
+    cursor: pointer;
+    color: purple;
+}
+
+a:active{
+    color: blue;
 }
 
 #numEqual{
