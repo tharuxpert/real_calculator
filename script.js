@@ -166,7 +166,7 @@ function equal() {
     switch (operator) {
         case '+':
             y = input.value;
-            var e = parseInt(x) + parseInt(y);
+            var e = Number(x) + Number(y);
 
             numClear.textContent = 'CE';
 
@@ -174,7 +174,7 @@ function equal() {
             break;
         case '-':
             y = input.value;
-            var e = parseInt(x) - parseInt(y);
+            var e = Number(x) - Number(y);
 
             numClear.textContent = 'CE';
 
@@ -182,7 +182,7 @@ function equal() {
             break;
         case '/':
             y = input.value;
-            var e = parseInt(x) / parseInt(y);
+            var e = Number(x) / Number(y);
 
             numClear.textContent = 'CE';
 
@@ -190,7 +190,7 @@ function equal() {
             break;
         case '*':
             y = input.value;
-            var e = parseInt(x) * parseInt(y);
+            var e = Number(x) * Number(y);
 
             numClear.textContent = 'CE';
 
