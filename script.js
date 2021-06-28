@@ -13,6 +13,12 @@ var num8 = document.querySelector('#num8').addEventListener('click', num8Clicked
 var num9 = document.querySelector('#num9').addEventListener('click', num9Clicked);
 var numclear = document.querySelector('#numClear').addEventListener('click', clearAll);
 
+var numEqual = document.querySelector('#numEqual').addEventListener('click', equal);
+document.querySelector('#numAdd').addEventListener('click', numAdd);
+document.querySelector('#numDivs').addEventListener('click', numDivs);
+document.querySelector('#numMulti').addEventListener('click', numMulti);
+document.querySelector('#numSubs').addEventListener('click', numSubs);
+
 document.getElementById("input").addEventListener("mousedown", unselectable);
 
 function unselectable(event){
@@ -99,12 +105,97 @@ function num9Clicked() {
     numClear.textContent = 'C';
 }
 
-// Inserting 'C' text content to Clear Button
-if (input.value != '') {
-    numClear.textContent = 'C';
-}
-
 function clearAll() {
     input.value = '';
     numClear.textContent = 'CE';
+}
+
+var x = 0;
+var d = 0;
+var operator;
+// Mathematical operations
+function numAdd() {
+    operator = '+';
+    x = input.value;
+    numClear.textContent = 'CE';
+
+    if (input.value == '' || input.value == '0.') {
+        alert('Invalid Value!')
+    }
+
+    input.value = '';
+}
+
+function numSubs() {
+    operator = '-';
+    x = input.value;
+    numClear.textContent = 'CE';
+
+    if (input.value == '' || input.value == '0.') {
+        alert('Invalid Value!')
+    }
+
+    input.value = '';
+}
+
+function numDivs() {
+    operator = '/';
+    x = input.value;
+    numClear.textContent = 'CE';
+
+    if (input.value == '' || input.value == '0.') {
+        alert('Invalid Value!')
+    }
+
+    input.value = '';
+}
+
+function numMulti() {
+    operator = '*';
+    x = input.value;
+    numClear.textContent = 'CE';
+
+    if (input.value == '' || input.value == '0.') {
+        alert('Invalid Value!')
+    }
+
+    input.value = '';
+}
+
+function equal() {
+    switch (operator) {
+        case '+':
+            y = input.value;
+            var e = parseInt(x) + parseInt(y);
+
+            numClear.textContent = 'CE';
+
+            input.value = e;
+            break;
+        case '-':
+            y = input.value;
+            var e = parseInt(x) - parseInt(y);
+
+            numClear.textContent = 'CE';
+
+            input.value = e;
+            break;
+        case '/':
+            y = input.value;
+            var e = parseInt(x) / parseInt(y);
+
+            numClear.textContent = 'CE';
+
+            input.value = e;
+            break;
+        case '*':
+            y = input.value;
+            var e = parseInt(x) * parseInt(y);
+
+            numClear.textContent = 'CE';
+
+            input.value = e;
+            break;
+    }
+        
 }
