@@ -13,6 +13,15 @@ var num8 = document.querySelector('#num8').addEventListener('click', num8Clicked
 var num9 = document.querySelector('#num9').addEventListener('click', num9Clicked);
 var numclear = document.querySelector('#numClear').addEventListener('click', clearAll);
 
+var bleep = new Audio();
+bleep.src = "src/bleep.mp3"
+
+var bleep2 = new Audio();
+bleep2.src = "src/bleep2.mp3"
+
+var bleep3 = new Audio();
+bleep3.src = "src/bleep3.mp3"
+
 var numEqual = document.querySelector('#numEqual').addEventListener('click', equal);
 document.querySelector('#numAdd').addEventListener('click', numAdd);
 document.querySelector('#numDivs').addEventListener('click', numDivs);
