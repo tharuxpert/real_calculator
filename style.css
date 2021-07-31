@@ -1,181 +1,174 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body{
+    transform-origin: 0 0;
+    transform: scale(1.8);
+    padding-right: 42%;
+    margin: auto;
+    background: url(https://www.wallpaperbetter.com/wallpaper/154/289/154/cool-backgrounds-2K-wallpaper.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    place-items: center;
+    overflow-X: hidden;
+    align-items: center;
+    place-content: center;
 
-* {
-	font-family: 'Roboto', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-body {
-	transform-origin: 0 0;
-	transform: scale(1.8);
-	padding-right: 42%;
-	margin: auto;
-	background: url(https://www.wallpaperbetter.com/wallpaper/154/289/154/cool-backgrounds-2K-wallpaper.jpg);
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	box-sizing: border-box;
-	place-items: center;
-	overflow-X: hidden;
-	align-items: center;
-	place-content: center;
-
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	background-color: #222222;
+#cal{
+    border: 5px solid rgb(75, 75, 75);
+    box-shadow: 0 0 0 3px rgb(0, 0, 0);
+    margin-top: 20px;
+    border-radius: 5%;
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(161, 161, 161) 49%, rgb(224, 222, 222) 100%);
+    
+}
+#input{
+    font-size: 1.3rem;
+    height: 30px;
+    width: 240px;
+    border-radius: 5px;
+    border: 0.1px solid;
+    background-color: #ddfcff;
+    margin-bottom: 10px;
+    text-align: right;
+    cursor: auto;
+    overflow: hidden;
 }
 
-#cal {
-	border: 5px solid rgb(75, 75, 75);
-	box-shadow: 0 0 0 3px rgb(0, 0, 0);
-	margin-top: 20px;
-	border-radius: 5%;
-	height: 250px;
-	width: 250px;
-	padding: 10px;
-	background: #dddddd;
-	
+textarea:focus, input:focus{
+    outline: none;
 }
 
-#input {
-	font-size: 1.3rem;
-	height: 30px;
-	width: 240px;
-	border-radius: 5px;
-	border: 0.1px solid;
-	background-color: #ddfcff;
-	margin-bottom: 10px;
-	text-align: right;
-	cursor: auto;
-	overflow: hidden;
+#input::placeholder{
+    font-size: 1.3rem;
+    color: black;
 }
 
-textarea:focus, input:focus {
-	outline: none;
+.btns1{
+    height: 35px;
+    width: 35px;
+    margin: 5px 5px;
+    border: 1.5px solid gray;
+    border-radius: 5px;
+    background: linear-gradient(142deg, rgba(255,255,255,1) 0%, rgba(193,240,245,1) 55%);
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
-#input::placeholder {
-	font-size: 1.3rem;
-	color: black;
+#num00{
+    position: relative;
+    top: -2px;
+    width: 35px;
+    height: 35px;
+    font-weight: 600;
+    margin: 5px 5px 5px 5px;
+    padding-right: 3px;
+    padding-left: 2.7px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: 1.5px solid gray;
+    background: linear-gradient(142deg, rgba(255,255,255,1) 0%, rgba(193,240,245,1) 55%);
+    
 }
 
-.btns1 {
-	height: 35px;
-	width: 35px;
-	margin: 5px 5px;
-	border: 1.5px solid gray;
-	border-radius: 5px;
-	background: #c1f0f5;
-	font-size: 1.6rem;
-	font-weight: 600;
+.btns2{
+    height: 35px;
+    width: 35px;
+    margin: 5px 5px;
+    border: 1.5px solid gray;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background: linear-gradient(138deg, rgba(228,238,229,1) 20%, rgba(175,255,182,1) 41%);
 }
 
-#num00 {
-	position: relative;
-	top: -2px;
-	width: 35px;
-	height: 35px;
-	font-weight: 600;
-	margin: 5px 5px 5px 5px;
-	padding-right: 3px;
-	padding-left: 2.7px;
-	font-size: 1.3rem;
-	border-radius: 5px;
-	border: 1.5px solid gray;
-	background: #c1f0f5;
-	
-}
-
-.btns2 {
-	height: 35px;
-	width: 35px;
-	margin: 5px 5px;
-	border: 1.5px solid gray;
-	border-radius: 5px;
-	font-size: 1.6rem;
-	font-weight: 600;
-	background: #afffb6;
-}
-
-.btnC {
-	position: relative;
-	top: -49px;
-	right: 96px;
-	height: 35px;
-	width: 35px;
-	border: 1.5px solid red;
-	border-radius: 5px;
-	font-size: 1rem;
-	background: #ffafaf;
+.btnC{
+    position: relative;
+    top: -49px;
+    right: 96px;
+    height: 35px;
+    width: 35px;
+    border: 1.5px solid red;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: linear-gradient(138deg, rgba(245,213,213,1) 20%, rgba(255,175,175,1) 48%);
 }
 
 /* Label */
-#label {
-	font-size: 1rem;
-	color: gray;
-	position: relative;
-	left: 45px;
+#label{
+    font-size: 1rem;
+    color: gray;
+    position: relative;
+    left: 45px;
 }
 
-a {
-	position: relative;
-	left: 45px;
-	text-decoration: none;
-	color: rgb(255, 8, 0);
-	font-style: italic;
+a{
+    position: relative;
+    left: 45px;
+    text-decoration: none;
+    color: rgb(255, 8, 0);
+    font-style: italic;
 }
 
-a:hover {
-	cursor: pointer;
-	color: purple;
+a:hover{
+    cursor: pointer;
+    color: purple;
 }
 
-a:active {
-	color: blue;
+a:active{
+    color: blue;
 }
 
-#numEqual {
-	position: relative;
-	top: 41px;
-	right: 61px;
-	height: 125px;
-	width: 35px;
-	border: 1.5px solid gray;
-	border-radius: 5px;
-	font-size: 1.6rem;
-	font-weight: 600;
-	background: #afffb6;
+#numEqual{
+    position: relative;
+    top: 41px;
+    right: 61px;
+    height: 125px;
+    width: 35px;
+    border: 1.5px solid gray;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background: linear-gradient(138deg, rgba(228,238,229,1) 20%, rgba(175,255,182,1) 41%);
 }
 
-.btns1:hover {
-	cursor: pointer;
-	background: #ffe692;
-	border: 0.5px solid #f1d370;
+.btns1:hover{
+    cursor: pointer;
+    background: #ffe692;
+    border: 0.5px solid #f1d370;
 }
 
-.btns2:hover {
-	cursor: pointer;
-	background: #ffe692;
-	border: 0.5px solid #f1d370;
+.btns2:hover{
+    cursor: pointer;
+    background: #ffe692;
+    border: 0.5px solid #f1d370;
 }
 
-#num00:hover {
-	cursor: pointer;
-	background: #ffe692;
-	border: 0.5px solid #f1d370;
+#num00:hover{
+    cursor: pointer;
+    background: #ffe692;
+    border: 0.5px solid #f1d370;
 }
 
-#numEqual:hover {
-	cursor: pointer;
-	background: #ffe692;
-	border: 0.5px solid #f1d370;
+#numEqual:hover{
+    cursor: pointer;
+    background: #ffe692;
+    border: 0.5px solid #f1d370;
 }
 
-#numClear:hover {
-	cursor: pointer;
-	background: #f67777;
+#numClear:hover{
+    cursor: pointer;
+    background: rgb(246,119,119);
+    background: linear-gradient(138deg, rgba(246,119,119,1) 20%, rgba(244,163,163,1) 37%, rgba(244,130,130,1) 56%);
 }
