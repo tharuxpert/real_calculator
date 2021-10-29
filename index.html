@@ -1,41 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>🖩 Calculator</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div id="cal">
-        <input type="text" name="input" maxlength="9" id="input" placeholder="0" readonly><br>
+      <input
+        type="text"
+        name="input"
+        maxlength="9"
+        id="input"
+        placeholder="0"
+        readonly
+      /><br />
 
-        <button onmousedown="bleep.play()" class="btns1" id="num7">7</button>
-        <button onmousedown="bleep.play()" class="btns1" id="num8">8</button>
-        <button onmousedown="bleep.play()" class="btns1" id="num9">9</button>
-        <button onmousedown="bleep.play()" class="btns2" id="numDivs">÷</button><br>
-        <button onmousedown="bleep.play()" class="btns1" id="num4">4</button>
-        <button onmousedown="bleep.play()" class="btns1" id="num5">5</button>
-        <button onmousedown="bleep.play()" class="btns1" id="num6">6</button>
-        <button onmousedown="bleep.play()" class="btns2" id="numMulti">x</button><br>
-        <button onmousedown="bleep.play()" class="btns1" id="num1">1</button>
-        <button onmousedown="bleep.play()" class="btns1" id="num2">2</button>
-        <button onmousedown="bleep.play()" class="btns1" id="num3">3</button>
-        <button onmousedown="bleep.play()" class="btns2" id="numSubs">-</button><br>
-        <button onmousedown="bleep.play()" class="btns1" id="num0">0</button>
-        <button onmousedown="bleep.play()" class="btns1" id="numDot">.</button>
-        <button onmousedown="bleep.play()" id="num00">00</button>
-        <button onmousedown="bleep.play()" value="numAdd" class="btns2" id="numAdd">+</button><br>
-        <label id="label">Created By </label>
-        <a draggable="false" target="_blank" id="link" href="https://github.com/tharusha-nax/">Tharusha</a>
+      <button onmousedown="bleep.play()" class="btns1" id="num7">7</button>
+      <button onmousedown="bleep.play()" class="btns1" id="num8">8</button>
+      <button onmousedown="bleep.play()" class="btns1" id="num9">9</button>
+      <button onmousedown="bleep.play()" class="btns2" id="numDivs">÷</button
+      ><br />
+      <button onmousedown="bleep.play()" class="btns1" id="num4">4</button>
+      <button onmousedown="bleep.play()" class="btns1" id="num5">5</button>
+      <button onmousedown="bleep.play()" class="btns1" id="num6">6</button>
+      <button onmousedown="bleep.play()" class="btns2" id="numMulti">x</button
+      ><br />
+      <button onmousedown="bleep.play()" class="btns1" id="num1">1</button>
+      <button onmousedown="bleep.play()" class="btns1" id="num2">2</button>
+      <button onmousedown="bleep.play()" class="btns1" id="num3">3</button>
+      <button onmousedown="bleep.play()" class="btns2" id="numSubs">-</button
+      ><br />
+      <button onmousedown="bleep.play()" class="btns1" id="num0">0</button>
+      <button onmousedown="bleep.play()" class="btns1" id="numDot">.</button>
+      <button onmousedown="bleep.play()" id="num00">00</button>
+      <button
+        onmousedown="bleep.play()"
+        value="numAdd"
+        class="btns2"
+        id="numAdd"
+      >
+        +</button
+      ><br />
+      <label id="label">Created By </label>
+      <a
+        draggable="false"
+        target="_blank"
+        id="link"
+        href="https://github.com/tharusha-nax/"
+        >Tharusha</a
+      >
     </div>
 
-        <button onmousedown="bleep2.play()" id="numEqual">=</button>
-        <button onmousedown="bleep3.play()"  class="btnC" id="numClear">CE</button>
+    <button onmousedown="bleep2.play()" id="numEqual">=</button>
+    <button onmousedown="bleep3.play()" class="btnC" id="numClear">CE</button>
 
     <!-- External JS -->
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
